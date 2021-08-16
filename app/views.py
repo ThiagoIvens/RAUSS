@@ -23,7 +23,7 @@ def orcamentopage(request):
 
         email_from = settings.EMAIL_HOST_USER
 
-        recipient_list = ['thiagorech2121@gmail.com']
+        recipient_list = ['contato@rauss.com.br']
 
         send_mail(subject, message, email_from, recipient_list)
 
