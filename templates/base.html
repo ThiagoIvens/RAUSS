@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Head Section -->
+    {% include "includes/head.html" %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+    <!-- Header Section -->
+    {% include "includes/header.html" %}
+    
+    <!-- Block Section -->
+    <main>
+    {% block content %} {% endblock %}
+    </main>
+    <!-- Footer Section -->
+    {% include "includes/footer.html" %}
+
+    <!-- JavaScript -->
+    {% include "includes/jsPlugins.html" %}
+
+    {% block script %} {% endblock script %}
+
+</html>

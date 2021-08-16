@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}RAUSS - Orçamento{% endblock title %}
+
+{% block content %} 
+
+<!-- Formulario Orçamento -->
+<div class="div-form">
+    <div class="glass-form">
+        <div class="content">
+            <form class="form" action="{% url 'orcamento' %}" method="POST">
+                {% csrf_token %}
+                <div class="field">
+                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required='' pattern="^.+@.+\.[a-zA-Z]{2,63}$">
+                </div>
+                <div class="field">
+                    <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">
+                </div>
+                <div class="field">
+                    <input type="text" name="telefone" class="form-control" id="inputTelefone" placeholder="Telefone">
+                </div>
+                <div class="field">
+                    <textarea type="text" name="descricao" class="form-control" id="inputDesc" placeholder="Descreva a solicitação."></textarea>
+                </div>
+                
+                <button class="btn btn-orcamento btn-form " type="submit">Peça seu orçamento!</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

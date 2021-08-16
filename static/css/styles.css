@@ -1,0 +1,401 @@
+
+
+/* HEADER SECTION */
+header, a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #681f2b;
+}
+
+.icon-midias-navbar {
+    margin: 3px;
+}
+
+#Layer_1 {
+    width: 200px;
+    height: 50px;
+}
+
+/* BODY MAIN SECTION */
+main {
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+
+/* BUTTON ORCAMENTO */
+.btn-orcamento{
+    background-color: transparent;
+    color: #681f2b;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #681f2b;
+    position: relative;
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.btn-orcamento:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-orcamento:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #681f2b;
+    color: #fff;
+}
+
+.btn-orcamento:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    color: #fff;
+}
+
+
+/* ABOUT SECTION */
+.about-bg, .div-form{
+    background-image: url(/media/bg_sobre/bg.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center; 
+    padding-top: 65vh;
+}
+
+.glass-window, .glass-form {
+    min-height: 70vh;
+    z-index: 3;
+    padding-top: 2em;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.5));
+}
+
+.about{
+    color: #000;
+    z-index: 4;
+    padding: 1rem 5rem 5rem 5rem;
+    font-size: large;
+}
+
+#titulo_sobre {
+    color: #681f2b;
+}
+
+/* PORTIFOLIO SECTION */
+
+.album {
+    border-bottom: 0.15rem #681f2b solid;
+}
+
+.btn-section {
+    padding-top: 2%;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    border: 0px outset transparent;
+}
+.shadow-sm {
+    -webkit-box-shadow: 0px 0px 0px 0px transparent; 
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+#titulo-portifolio {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+.container-fluid {
+    padding: 0;
+}
+.carousel-item img {
+    height: 70vh;
+    width: 100vw;
+}
+.titulos {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.15rem #681f2b solid;
+}
+.titulos h1 {
+    color: #681f2b;
+}
+
+
+
+/* FOOTER SECTION */
+footer{
+    background-color: #fff;
+    color: #000;
+    border-top: 0.3rem #681f2b solid;
+    font-size: large;
+}
+#Layer_2 {
+    width: 100%;
+}
+
+/* FORMULARIO DE ORCAMENTO */
+
+.div-form {
+    padding-top: 0em;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 120vh;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.glass-form {
+    display: flex;
+    justify-content: center;
+    border-radius: 10em 0em 10em 0em;
+    width:50%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.7));
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.field{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 0.2rem #681f2b solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    /* background: transparent; */
+    border: 0;
+}
+
+textarea{
+    height: 150px;
+}
+
+.btn-form {
+    width: 100%;
+}
+
+input::placeholder {
+    color: #681f2b;
+}
+
+textarea::placeholder {
+    color: #681f2b;
+}
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #212529;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #681f2b;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #681f2b;
+  }
+
+
+/* Quick-zoom Container */
+.quick-img-zoom img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+/* The Transformation */
+.quick-img-zoom:hover img {
+    transform: scale(2);    
+}
+
+/* MODAL IMAGE */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 800px){
+    .modal-content {
+      width: 100%;
+    }
+
+    .glass-form {
+        border-radius: 0em;
+        width:100%;
+        margin-top: 0em;
+        padding-top: 0em;
+
+    }
+    .ico_mobile {
+        width: 0%;
+        max-width: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #icon_navbar {
+        display:none;
+    }
+    .container_mobile {
+        width: 200px;
+        padding: 5px;
+    }
+    #Layer_1 {
+        height: 100px;
+    }
+    .fixed-top {
+        position: unset;
+    }
+    .div-form {
+        height: 100%;
+    }
+    .about-bg {
+        padding-top: 0em;
+    }
+    .about {
+        padding: 0em 1em;
+    }
+    #titulo_sobre {
+        display: none;
+    }
+    .btn-orcamento {
+        width: 100%;
+    }
+    .btn-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .glass-window {
+        min-height: 0em;
+    }
+    .carousel-item img {
+        height: 30vh;
+    }
+    .close {
+        top: 25px;
+      }
+}
+@media only screen and (min-height: 900px){
+    .content {
+        max-width: 800px;
+    }
+}
+
+  /* --------------------------------------------------------------- */
