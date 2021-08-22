@@ -1,7 +1,8 @@
 {% load static %}
+
 <div class="album bg-light">
     <div class="container-fluid">
-        <div id="carouselPortifolioIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselPortifolioIndicators" class="carousel slide" data-ride="carousel" onload="">
             <div class="carousel-inner" role="listbox">
                 {% for item in portifolio %}
                     <div class="carousel-item {% if forloop.first %}active{% endif %}" id="slide{{forloop.counter}}">
@@ -51,6 +52,6 @@
             {% endfor %}
         </div>
         <div class="btn-section">
-            <a class="btn-orcamento" type="submit" href="{% url 'orcamento' %}">Peça já o seu orçamento!</a>
+            <a class="btn-orcamento" type="submit" href="#">Peça já o seu orçamento!</a>
         </div>
 -->

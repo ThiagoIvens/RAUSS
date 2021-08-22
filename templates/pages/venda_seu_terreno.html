@@ -8,22 +8,23 @@
 <div class="div-form">
     <div class="glass-form">
         <div class="content">
-            <form class="form" action="{% url 'orcamento' %}" method="POST">
+            <form class="form" action="{% url 'venda_seu_terreno' %}" method="POST">
                 {% csrf_token %}
                 <div class="field">
                     <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required='' pattern="^.+@.+\.[a-zA-Z]{2,63}$">
                 </div>
                 <div class="field">
-                    <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">
+                    <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome" required=''>
                 </div>
                 <div class="field">
-                    <input type="text" name="telefone" class="form-control" id="inputTelefone" placeholder="Telefone">
+                    <input type="text" name="telefone" class="form-control" id="inputTelefone" placeholder="Telefone" required=''>
                 </div>
+                <!--
                 <div class="field">
                     <textarea type="text" name="descricao" class="form-control" id="inputDesc" placeholder="Descreva a solicitação."></textarea>
                 </div>
-                
-                <button class="btn btn-orcamento btn-form " type="submit">Peça seu orçamento!</button>
+                -->
+                <button class="btn btn-orcamento btn-form" type="submit">Enviar informações!</button>
 
             </form>
         </div>

@@ -8,6 +8,11 @@ header, a {
 a:hover {
     color: #681f2b;
 }
+a-compramos-seu-terreno {
+    float: right;
+    border: 3px solid #681f2b;
+    border-radius: 10px;
+}
 
 .icon-midias-navbar {
     margin: 3px;
@@ -89,7 +94,7 @@ main {
 }
 
 .glass-window, .glass-form {
-    min-height: 70vh;
+    min-height: 50vh;
     z-index: 3;
     padding-top: 2em;
     flex-wrap: wrap;
@@ -109,6 +114,12 @@ main {
 }
 
 /* PORTIFOLIO SECTION */
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
 
 .album {
     border-bottom: 0.15rem #681f2b solid;
@@ -161,6 +172,9 @@ footer{
 #Layer_2 {
     width: 100%;
 }
+.bold{
+    font-weight: bold;
+}
 
 /* FORMULARIO DE ORCAMENTO */
 
@@ -169,7 +183,7 @@ footer{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
 }
 

@@ -10,16 +10,15 @@ def homepage(request):
     return render(request, 'pages/home.html', {'portifolio':portifolio, 'projetos':projetos})
 
 
-def orcamentopage(request):
+def page_Venda_Seu_Terreno(request):
 
     if request.method=="POST":
-        subject = "Preciso de um orçamento!"
+        subject = "Quero vender meu terreno!"
         nome = request.POST['nome']
-        descricao = request.POST['descricao']
         emailDoSolicitante = request.POST['email']
         telefone = request.POST['telefone']
         
-        message = "Olá, meu nome é " + nome + ".\n" + descricao + ".\n Meu telefone: "+ telefone + "\nMeu Email: "+ emailDoSolicitante
+        message = "Olá, meu nome é " + nome + ".\n" + ".\n Meu telefone: "+ telefone + "\nMeu Email: "+ emailDoSolicitante
 
         email_from = settings.EMAIL_HOST_USER
 
@@ -30,4 +29,4 @@ def orcamentopage(request):
         portifolio = Portifolio.objects.all()
         return render(request, 'pages/home.html', {'portifolio':portifolio})
 
-    return render(request, 'pages/orcamento.html')
+    return render(request, 'pages/venda_seu_terreno.html')
