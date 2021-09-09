@@ -83,7 +83,7 @@ main {
 
 /* ABOUT SECTION */
 .about-bg, .div-form{
-    background-image: url(/media/bg_sobre/bg.gif);
+    background-image: url(/media/bg_sobre/bg.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -122,7 +122,7 @@ main {
   }
 
 .album {
-    border-bottom: 0.15rem #681f2b solid;
+    box-shadow: 1em #212529;
 }
 
 .btn-section {
@@ -157,10 +157,18 @@ main {
     border-bottom: 0.15rem #681f2b solid;
 }
 .titulos h1 {
-    color: #681f2b;
+    color: #f1f1f1;
 }
 
+/* Projetos Section */
 
+.bg-rauss {
+    background: #681f2b;
+}
+
+.box-shadow {
+    box-shadow: 0 0 4em #000;
+}
 
 /* FOOTER SECTION */
 footer{
@@ -409,6 +417,12 @@ textarea::placeholder {
 @media only screen and (min-height: 900px){
     .content {
         max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 1140px){
+    .container-fluid {
+        max-width: 1140px;
     }
 }
 

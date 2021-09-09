@@ -1,38 +1,44 @@
 {% load static %}
-<div class="album bg-light">
-    <div class="container-fluid">
-        <div id="carouselProjetosIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                {% for item in projetos %}
-                    <div class="carousel-item {% if forloop.first %}active{% endif %}" id="slideprojetos{{forloop.counter}}">
-                        <img class="img-responsive" src="/media/{{item.image}}" alt="{{item.name}}" onclick="imgzoom('{{item.name}}','/media/{{item.image}}')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2 id="titulo-portifolio">{{item.name}}</h2>
-                        </div>
+
+<br>
+<div class="titulos h1-projetos"><h1>PROJETOS EM ANDAMENTO</h1></div>
+<br>
+<div class="container-fluid">
+    <div id="carouselProjetosIndicators" class="carousel slide box-shadow" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            {% for item in projetos %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}" id="slideprojetos{{forloop.counter}}">
+                    <img class="img-responsive" src="/media/{{item.image}}" alt="{{item.name}}" onclick="imgzoom('{{item.name}}','/media/{{item.image}}')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 id="titulo-portifolio">{{item.name}}</h2>
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="owl-next">
             <a class="carousel-control-prev" href="#carouselProjetosIndicators" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselProjetosIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+            </a> 
         </div>
+        
+        <a class="carousel-control-next" href="#carouselProjetosIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
-        </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
     </div>
 </div>
+<br>
 
 <!-- OLD PORTIFOLIO -->
 <!--
