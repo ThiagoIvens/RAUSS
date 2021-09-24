@@ -1,13 +1,22 @@
-
+html {
+    scroll-padding-top: 10em;
+}
 
 /* HEADER SECTION */
-header, a {
+* {
+    font-family: 'Acherus Grotesque', sans-serif;
+}
+
+header,
+a {
     color: #000;
     text-decoration: none;
 }
+
 a:hover {
     color: #681f2b;
 }
+
 a-compramos-seu-terreno {
     float: right;
     border: 3px solid #681f2b;
@@ -23,6 +32,11 @@ a-compramos-seu-terreno {
     height: 50px;
 }
 
+.float-right{
+    float: right;
+    justify-content: end;
+}
+
 /* BODY MAIN SECTION */
 main {
     overflow-x: hidden;
@@ -35,7 +49,7 @@ main {
 
 
 /* BUTTON ORCAMENTO */
-.btn-orcamento{
+.btn-orcamento {
     background-color: transparent;
     color: #681f2b;
     width: 50%;
@@ -80,29 +94,30 @@ main {
     color: #fff;
 }
 
-
 /* ABOUT SECTION */
-.about-bg, .div-form{
+.about-bg,
+.div-form {
     background-image: url(/media/bg_sobre/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     display: flex;
     box-sizing: border-box;
-    align-items: center; 
+    align-items: center;
     padding-top: 65vh;
 }
 
-.glass-window, .glass-form {
+.glass-window,
+.glass-form {
     min-height: 50vh;
     z-index: 3;
     padding-top: 2em;
     flex-wrap: wrap;
     width: 100%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.5));
+    background: linear-gradient(to top, rgba(128, 128, 119, 1), rgba(128, 128, 119, 0.5));
 }
 
-.about{
+.about {
     color: #000;
     z-index: 4;
     padding: 1rem 5rem 5rem 5rem;
@@ -119,7 +134,7 @@ main {
     transition: -webkit-transform 2s ease;
     transition: transform 2s ease;
     transition: transform 2s ease, -webkit-transform 2s ease;
-  }
+}
 
 .album {
     box-shadow: 1em #212529;
@@ -137,25 +152,31 @@ main {
 .card {
     border: 0px outset transparent;
 }
+
 .shadow-sm {
-    -webkit-box-shadow: 0px 0px 0px 0px transparent; 
+    -webkit-box-shadow: 0px 0px 0px 0px transparent;
     box-shadow: 0px 0px 0px 0px transparent;
 }
+
 #titulo-portifolio {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
+
 .container-fluid {
     padding: 0;
 }
+
 .carousel-item img {
     height: 70vh;
     width: 100vw;
 }
+
 .titulos {
     width: 100%;
     text-align: center;
     border-bottom: 0.15rem #681f2b solid;
 }
+
 .titulos h1 {
     color: #f1f1f1;
 }
@@ -170,17 +191,55 @@ main {
     box-shadow: 0 0 4em #000;
 }
 
+/* VALORES */
+#Layer_Values {
+    width: 50% !important;
+}
+
+.justify-center {
+    text-align: center;
+}
+
+.shape-rectangle-black {
+    width: 70%;
+    height: 100%;
+    background: #681f2b;
+    position: absolute;
+    z-index: -2;
+    transform: skew(-15deg);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 100px;
+    right: 50%;
+}
+
+.index-3 {
+    z-index: 3;
+}
+
+.color-difference {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+.title-values {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1em !important;
+}
+
+
 /* FOOTER SECTION */
-footer{
+footer {
     background-color: #fff;
     color: #000;
-    border-top: 0.3rem #681f2b solid;
-    font-size: large;
 }
+
 #Layer_2 {
     width: 100%;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
 
@@ -204,8 +263,8 @@ footer{
     display: flex;
     justify-content: center;
     border-radius: 10em 0em 10em 0em;
-    width:50%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.7));
+    width: 50%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7));
 }
 
 .form {
@@ -215,7 +274,7 @@ footer{
     margin-bottom: 50px;
 }
 
-.field{
+.field {
     padding: 5px;
     margin-bottom: 15px;
     border: 0.2rem #681f2b solid;
@@ -231,7 +290,7 @@ footer{
     border: 0;
 }
 
-textarea{
+textarea {
     height: 150px;
 }
 
@@ -251,22 +310,22 @@ textarea::placeholder {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #212529;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #681f2b;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #681f2b;
-  }
+}
 
 
 /* Quick-zoom Container */
@@ -274,9 +333,10 @@ textarea::placeholder {
     transform-origin: 0 0;
     transition: transform .25s, visibility .25s ease-in;
 }
+
 /* The Transformation */
 .quick-img-zoom:hover img {
-    transform: scale(2);    
+    transform: scale(2);
 }
 
 /* MODAL IMAGE */
@@ -285,35 +345,46 @@ textarea::placeholder {
     border-radius: 0px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -322,21 +393,27 @@ textarea::placeholder {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
     position: absolute;
     top: 50px;
     right: 35px;
@@ -344,86 +421,96 @@ textarea::placeholder {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 800px){
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 800px) {
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
 
     .glass-form {
         border-radius: 0em;
-        width:100%;
+        width: 100%;
         margin-top: 0em;
         padding-top: 0em;
 
     }
+
     .ico_mobile {
         width: 0%;
         max-width: 0%;
         margin-left: auto;
         margin-right: auto;
     }
+
     #icon_navbar {
-        display:none;
+        display: none;
     }
-    .container_mobile {
-        width: 200px;
-        padding: 5px;
-    }
+
     #Layer_1 {
         height: 100px;
     }
+
     .fixed-top {
         position: unset;
     }
+
     .div-form {
         height: 100%;
     }
+
     .about-bg {
         padding-top: 0em;
     }
+
     .about {
         padding: 0em 1em;
     }
+
     #titulo_sobre {
         display: none;
     }
+
     .btn-orcamento {
         width: 100%;
     }
+
     .btn-section {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     .glass-window {
         min-height: 0em;
     }
+
     .carousel-item img {
         height: 30vh;
     }
+
     .close {
         top: 25px;
-      }
+    }
 }
-@media only screen and (min-height: 900px){
+
+@media only screen and (min-height: 900px) {
     .content {
         max-width: 800px;
     }
 }
 
-@media only screen and (min-width: 1140px){
+@media only screen and (min-width: 1140px) {
     .container-fluid {
         max-width: 1140px;
     }
 }
 
-  /* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */

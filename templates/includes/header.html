@@ -1,15 +1,66 @@
 <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container container_mobile">
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.2 79.6"><defs><style>.cls-1{fill:#808177;}.cls-2{fill:#681f2b;}</style></defs><title>Logotipo Rauss</title><path class="cls-2" d="M77.3,41.9V1.2c0-1,.3-1.2,1.2-1.2H82c.9,0,1.2.3,1.2,1.2V41.5c0,12.5,6.3,17.1,15.4,17.1s15.4-4.6,15.4-17.1V1.2c0-.9.3-1.2,1.2-1.2h3.6c.9,0,1.1.3,1.1,1.2V41.9c0,15-9,22.7-21.3,22.7S77.3,56.8,77.3,41.9Z"/><path class="cls-2" d="M39.8,62.3l-14.2-26c7-1.9,11.8-9,11.8-18C37.4,6.1,27.7,0,19.1,0H1.2C.3,0,0,.3,0,1.2V62.6c0,1.1.3,1.2,1.2,1.2H4.7c.9,0,1.2-.2,1.2-1.2V5.9H18.7c7.8,0,12.9,5,12.9,12.5S27.7,31.9,18.7,31.9H15.7L33.3,62.6a2.4,2.4,0,0,0,2,1.2h3.5C39.8,63.8,40.4,63.3,39.8,62.3Z"/><path class="cls-2" d="M80,62.6,55.3,1.1C55,.5,54.8,0,54.4,0h-.2c-.5,0-.6.5-1,1.1L35.5,46.3a1.5,1.5,0,0,0,.1,1.5L38,52.3a.7.7,0,0,0,1.2-.1l15-38.6,19,49c.5.9.8,1.2,1.5,1.2h4.4C80,63.8,80.3,63.2,80,62.6Z"/><path class="cls-2" d="M143.6,28.9c-8.8-1.2-14.9-2.6-14.9-9.9,0-4.6,2.9-13.4,15.1-13.4a13.2,13.2,0,0,1,7.7,2c.6.4,1.3-.1,1.7-.8L155,4.2a1.3,1.3,0,0,0-.4-1.8C150.8.5,148.5,0,143.3,0c-15.5,0-20.2,11.8-20.2,18.6,0,11.9,8.2,14.8,17,16.1,10.5,1.6,17,4.4,17,11.8,0,9.3-8.2,11.6-15.6,11.6s-10.7-2.1-15.8-6c-1-.6-1.3-.4-1.8.5l-1.5,2.9c-.5,1-.5,1.4.3,2,6.1,4.7,11.2,6.9,19.7,6.9,13.8,0,20.4-8.9,20.4-18.5C162.8,34,154,30.4,143.6,28.9Z"/><path class="cls-2" d="M176.2,28.9c-8.7-1.8-14.7-3.7-14.3-11,.3-4.6,3.9-13,16-12.3a19.2,19.2,0,0,1,9.7,3.4.9.9,0,0,0,1.3-.4l1.9-3.4a1.1,1.1,0,0,0-.4-1.5A29,29,0,0,0,177.6.1c-15.5-1-20.9,10.5-21.3,17.3-.7,11.8,7.3,15.3,15.9,17.2,10.4,2.3,16.7,5.1,16.2,12.5-.6,9.3-8.7,11.7-16,11.1a13.9,13.9,0,0,1-5.5-1.7,2,2,0,0,0-2.6,1L163.3,59a2,2,0,0,0,.6,3,22.9,22.9,0,0,0,8.7,2.2c13.7.9,20.9-7.6,21.5-17.1C194.9,35.2,186.4,31.1,176.2,28.9Z"/></svg>
-            </a>
-            <div>
-                <a id="icon_navbar" href="https://www.facebook.com/RaussEngenharia" class="fa fa-facebook fa-2x icon-midias-navbar"></a>
-                <a id="icon_navbar" href="https://instagram.com/rauss.eng?utm_medium=copy_link" class="fa fa-instagram fa-2x icon-midias-navbar"></a>
-                <a id="icon_navbar" href="https://api.whatsapp.com/send?phone=5541999549871&text=Olá,%20tudo%20bem!" class="fa fa-whatsapp fa-2x icon-midias-navbar"></a>
-            </div>
+        <div class="container-lg container_mobile">
+            <a class="navbar-brand mt-2" href="{% url 'home' %}">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.2 79.6">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #808177;
+                            }
 
+                            .cls-2 {
+                                fill: #681f2b;
+                            }
+                        </style>
+                    </defs>
+                    <title>Logotipo Rauss</title>
+                    <path class="cls-2"
+                        d="M77.3,41.9V1.2c0-1,.3-1.2,1.2-1.2H82c.9,0,1.2.3,1.2,1.2V41.5c0,12.5,6.3,17.1,15.4,17.1s15.4-4.6,15.4-17.1V1.2c0-.9.3-1.2,1.2-1.2h3.6c.9,0,1.1.3,1.1,1.2V41.9c0,15-9,22.7-21.3,22.7S77.3,56.8,77.3,41.9Z" />
+                    <path class="cls-2"
+                        d="M39.8,62.3l-14.2-26c7-1.9,11.8-9,11.8-18C37.4,6.1,27.7,0,19.1,0H1.2C.3,0,0,.3,0,1.2V62.6c0,1.1.3,1.2,1.2,1.2H4.7c.9,0,1.2-.2,1.2-1.2V5.9H18.7c7.8,0,12.9,5,12.9,12.5S27.7,31.9,18.7,31.9H15.7L33.3,62.6a2.4,2.4,0,0,0,2,1.2h3.5C39.8,63.8,40.4,63.3,39.8,62.3Z" />
+                    <path class="cls-2"
+                        d="M80,62.6,55.3,1.1C55,.5,54.8,0,54.4,0h-.2c-.5,0-.6.5-1,1.1L35.5,46.3a1.5,1.5,0,0,0,.1,1.5L38,52.3a.7.7,0,0,0,1.2-.1l15-38.6,19,49c.5.9.8,1.2,1.5,1.2h4.4C80,63.8,80.3,63.2,80,62.6Z" />
+                    <path class="cls-2"
+                        d="M143.6,28.9c-8.8-1.2-14.9-2.6-14.9-9.9,0-4.6,2.9-13.4,15.1-13.4a13.2,13.2,0,0,1,7.7,2c.6.4,1.3-.1,1.7-.8L155,4.2a1.3,1.3,0,0,0-.4-1.8C150.8.5,148.5,0,143.3,0c-15.5,0-20.2,11.8-20.2,18.6,0,11.9,8.2,14.8,17,16.1,10.5,1.6,17,4.4,17,11.8,0,9.3-8.2,11.6-15.6,11.6s-10.7-2.1-15.8-6c-1-.6-1.3-.4-1.8.5l-1.5,2.9c-.5,1-.5,1.4.3,2,6.1,4.7,11.2,6.9,19.7,6.9,13.8,0,20.4-8.9,20.4-18.5C162.8,34,154,30.4,143.6,28.9Z" />
+                    <path class="cls-2"
+                        d="M176.2,28.9c-8.7-1.8-14.7-3.7-14.3-11,.3-4.6,3.9-13,16-12.3a19.2,19.2,0,0,1,9.7,3.4.9.9,0,0,0,1.3-.4l1.9-3.4a1.1,1.1,0,0,0-.4-1.5A29,29,0,0,0,177.6.1c-15.5-1-20.9,10.5-21.3,17.3-.7,11.8,7.3,15.3,15.9,17.2,10.4,2.3,16.7,5.1,16.2,12.5-.6,9.3-8.7,11.7-16,11.1a13.9,13.9,0,0,1-5.5-1.7,2,2,0,0,0-2.6,1L163.3,59a2,2,0,0,0,.6,3,22.9,22.9,0,0,0,8.7,2.2c13.7.9,20.9-7.6,21.5-17.1C194.9,35.2,186.4,31.1,176.2,28.9Z" />
+                </svg>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse mt-3 mb-3" id="myNavbar">
+                <div class="me-auto">
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#carouselPortifolioIndicators">Portifolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#carouselProjetosIndicators">Lançamentos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#values">Valores</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#localizacao">Localização</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-2">
+                    <a id="icon_navbar" href="https://www.facebook.com/RaussEngenharia"
+                        class="fa fa-facebook fa-lg icon-midias-navbar"></a>
+                    <a id="icon_navbar" href="https://instagram.com/rauss.eng?utm_medium=copy_link"
+                        class="fa fa-instagram fa-lg icon-midias-navbar"></a>
+                    <a id="icon_navbar" href="https://api.whatsapp.com/send?phone=5541999549871&text=Olá,%20tudo%20bem!"
+                        class="fa fa-whatsapp fa-lg icon-midias-navbar"></a>
+                </div>
+            </div>
         </div>
     </nav>
 
