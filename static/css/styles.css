@@ -51,25 +51,26 @@ main {
 /* BUTTON ORCAMENTO */
 .btn-orcamento {
     background-color: transparent;
-    color: #681f2b;
+    color: #fff;
     width: 50%;
     height: 100%;
     border-radius: 10px;
     transition: ease-out 0.3s;
     font-size: 2rem;
     outline: none;
-    border: 3px solid #681f2b;
+    border: 3px solid #fff;
     position: relative;
     z-index: 6;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn-orcamento:hover {
     cursor: pointer;
-    color: #fff;
+    color: #681f2b;
 }
 
 .btn-orcamento:before {
@@ -81,8 +82,8 @@ main {
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #681f2b;
-    color: #fff;
+    background-color: #fff;
+    color: #681f2b;
 }
 
 .btn-orcamento:hover:before {
@@ -91,20 +92,22 @@ main {
     right: 0;
     opacity: 1;
     z-index: -1;
-    color: #fff;
+    color: #681f2b;
 }
 
 /* ABOUT SECTION */
 .about-bg,
 .div-form {
-    background-image: url(/media/bg_sobre/bg.jpg);
+    background-image: url(/media/bg_sobre/bg-sobre.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    padding-top: 65vh;
+    padding-left: 50vw;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
 }
 
 .glass-window,
@@ -114,11 +117,11 @@ main {
     padding-top: 2em;
     flex-wrap: wrap;
     width: 100%;
-    background: linear-gradient(to top, rgba(128, 128, 119, 1), rgba(128, 128, 119, 0.5));
+    background: linear-gradient(to left, rgb(104, 31, 43, 1), rgb(104, 31, 43, 0.8), rgb(104, 31, 43, 0.6));
 }
 
 .about {
-    color: #000;
+    color: #fff;
     z-index: 4;
     padding: 1rem 5rem 5rem 5rem;
     font-size: large;
@@ -468,7 +471,9 @@ textarea::placeholder {
     }
 
     .about-bg {
-        padding-top: 0em;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .about {
