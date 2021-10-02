@@ -444,7 +444,6 @@ textarea::placeholder {
         width: 100%;
         margin-top: 0em;
         padding-top: 0em;
-
     }
 
     .ico_mobile {
@@ -518,4 +517,10 @@ textarea::placeholder {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .glass-window, .glass-form {
+        padding: 1em;
+        background: linear-gradient(to top, rgb(104, 31, 43, 1), rgb(104, 31, 43, 0.8), rgb(104, 31, 43, 0.6));
+    }
+}
 /* --------------------------------------------------------------- */
